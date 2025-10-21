@@ -1,0 +1,28 @@
+name: 🧱 Build & Publish Environment Image
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - environment/conda.environment.yml
+      - docker/runner.Dockerfile
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build image
+        run: docker build -f docker/runner.Dockerfile -t ghcr.io/${{ github.repository_owner }}/metabo-immune-niches:env-latest .
+
+      - name: Push image
+        run: docker push ghcr.io/${{ github.repository_owner }}/metabo-immune-niches:env-latest

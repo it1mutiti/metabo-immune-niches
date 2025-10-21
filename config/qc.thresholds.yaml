@@ -1,0 +1,11 @@
+spatial:
+  min_spots_detected_fraction: 0.90
+  mito_percent_max: 0.15
+  min_genes_per_spot: 500
+  max_genes_per_spot: 5000
+  neighbour_corr_min: 0.30
+single_cell:
+  min_genes: 200
+  max_mito_percent: 0.15
+  min_counts: 500
+  max_counts: 50000

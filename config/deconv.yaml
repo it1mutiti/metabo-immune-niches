@@ -1,0 +1,8 @@
+tangram:
+  epochs: 800
+  learning_rate: 0.001
+  density_prior: 0.2
+spotlight:
+  hvg: 3000
+  ntop_markers: 50
+  method: nsNMF

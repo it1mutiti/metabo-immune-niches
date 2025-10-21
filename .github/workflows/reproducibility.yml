@@ -1,0 +1,37 @@
+name: 🔁 Reproducibility Check (Containerized)
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  reproducibility:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository_owner }}/metabo-immune-niches:env-latest
+      options: --user 0:0
+
+    steps:
+      - name: Ensure git inside container
+        run: |
+          apt-get update -qq && apt-get install -y git git-lfs && git lfs install
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Show environment
+        run: |
+          python -V
+          python -m pip list | grep -E "anndata|scanpy|squidpy"
+
+      - name: Run sanity imports
+        run: |
+          python -c "import anndata, scanpy, squidpy; print('✅ Imports OK:', anndata.__version__, scanpy.__version__, squidpy.__version__)"

@@ -1,0 +1,7 @@
+graph:
+  visium_neighbours: 6
+  visium_hd_neighbours: 8
+  radius_multiplier: 1.5
+enrichment:
+  high_quantile: 0.70
+  permutations: 1000

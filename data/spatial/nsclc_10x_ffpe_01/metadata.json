@@ -1,0 +1,9 @@
+{
+  "cancer": "NSCLC",
+  "platform": "10x Visium FFPE",
+  "accession": "GSE123456",
+  "patient_id": "NSCLC01",
+  "resolution_um": 55,
+  "checksum": "9e552c06acb6d2d96f5a6baa222e846b35adff586c22332c4c250598f8a8aeb2",
+  "date_imported": "2025-10-18"
+}

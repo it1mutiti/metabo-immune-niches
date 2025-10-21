@@ -1,0 +1,12 @@
+project_name: Metabo-Immune Niches
+author: Irvine Tatenda Mutiti
+institute: Sunlit Vistallis Institute
+date: 2025-10
+random_seed: 42
+paths:
+  raw: data/raw
+  processed: data/processed
+  results: results
+  reports: reports
+  manifests: manifests
+  logs: logs
