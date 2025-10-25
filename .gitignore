@@ -1,12 +1,40 @@
-# R / Python cache
-.Rhistory
-.Rproj.user/
-__pycache__/
-.ipynb_checkpoints/
-# results, cache, and tmp
-results/logs/
-results/tmp/
-data/**/MANIFEST.sha256
-.aider*
+# --- metabo-immune-niches security & hygiene ---
+
+# Credentials and secrets
 .env
-# results/logs/
+*.key
+*.pem
+*.p12
+*.json
+secrets/
+tokens/
+
+# Logs and caches
+*.log
+*.tmp
+__pycache__/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Environments & build artifacts
+*.egg-info/
+.envs/
+venv/
+.conda/
+.venv/
+node_modules/
+
+# Large or derived data (keep local; publish via data repos if needed)
+data/raw/
+data/interim/
+data/processed/
+data/external/
+outputs/
+reports/
+results/
+manifests/raw_data_hashes.txt  # generated from local data
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
