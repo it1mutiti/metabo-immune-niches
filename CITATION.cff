@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "metabo-immune-niches: Verified Reproducibility Release v1.0.0"
+authors:
+  - family-names: Mutiti
+    given-names: Irvine Tatenda
+    email: it1mutiti@gmail.com
+    affiliation: Independent Researcher
+version: 1.0.0
+date-released: 2025-10-25
+doi: 10.5281/zenodo.TBD
+repository-code: "https://github.com/it1mutiti/metabo-immune-niches"
+license: MIT
