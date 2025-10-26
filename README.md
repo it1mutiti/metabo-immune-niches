@@ -1,5 +1,12 @@
 # 🧬 Metabo-Immune-Niches
 
+### About AI-assisted developer tools (optional)
+
+This repository may be used with optional AI developer tools (e.g., aider, cline, or VS Code AI extensions) **only for local debugging and documentation**.  
+These tools use a locally stored environment variable `OPENAI_API_KEY` loaded from a private `.env` file that is **never committed**.  
+**Important:** No analysis scripts, pipelines, or reproducibility steps require any OpenAI key. Reproduction can be performed fully offline using the documented environments and `make` targets.
+
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17447568.svg)](https://doi.org/10.5281/zenodo.17447568)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-Verified-success)](https://zenodo.org/records/17447568)
