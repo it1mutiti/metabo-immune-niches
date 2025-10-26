@@ -6,8 +6,8 @@ authors:
     given-names: Irvine Tatenda
     email: it1mutiti@gmail.com
     affiliation: Independent Researcher
-version: 1.0.0
-date-released: 2025-10-25
-doi: 10.5281/zenodo.TBD
+version: 1.0.1
+date-released: 2025-10-26
+doi: 10.5281/zenodo.17447568
 repository-code: "https://github.com/it1mutiti/metabo-immune-niches"
 license: MIT
