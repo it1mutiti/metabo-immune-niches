@@ -1,12 +1,29 @@
 # 🧬 Metabo-Immune-Niches
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17447568.svg)](https://doi.org/10.5281/zenodo.17447568)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Reproducibility](https://img.shields.io/badge/Reproducibility-Verified-success)](https://zenodo.org/records/17447568)
+[![Release](https://img.shields.io/github/v/release/it1mutiti/metabo-immune-niches)](https://github.com/it1mutiti/metabo-immune-niches/releases)
 [![Reproducibility Check](https://github.com/it1mutiti/metabo-immune-niches/actions/workflows/reproducibility.yml/badge.svg)](https://github.com/it1mutiti/metabo-immune-niches/actions/workflows/reproducibility.yml)
 
+---
 
-![Reproducibility](https://github.com/it1mutiti/metabo-immune-niches/actions/workflows/reproducibility.yml/badge.svg)
+**Verified reproducibility release (v1.0.0)**  
+Validation proof SHA-256: `f97fc2b36b5826ca7ac48ce3e2b5c836209acca4bdb917bac0dd1e3b81a2266e`
 
- metabo-immune-niches
-Reproducible spatial transcriptomics workflow integrating metabolomic and immune niche profiling
+Reproducible spatial transcriptomics workflow integrating metabolomic and immune niche profiling.
 
+---
+
+## 🚀 Quick Start
+
+```bash
+make segment2    # builds/validates reproducibility environment and logs
+
+
+See docs/SOPs/README_REPRODUCTION.md
+
+for full, publication-grade instructions.
 
 📋 Environment Status
 Component	Version	Notes
@@ -15,18 +32,18 @@ Conda Env	metabo-immune-niches	From environment/conda.lock
 R Env	Managed via renv	From environment/renv.lock
 Validated R version	≥ 4.4.3	Matches Bioconductor 3.20
 Validated Python version	3.10+	Matches Conda lockfile
-Last Validated	October 2025	
+Last Validated	October 2025	Verified reproducibility
 
 To check this on any machine:
 
 bash environment/check_environment.sh
 
-🚀 Quick Start
+🧩 Setup Instructions
 1️⃣ Prerequisites
 
 Install the following tools before proceeding:
 
-Tool	Minimum Version	Install
+Tool	Minimum Version	Install Link
 Git	2.30+	git-scm.com
 
 Git LFS	3.0+	git-lfs.com
@@ -34,8 +51,8 @@ Git LFS	3.0+	git-lfs.com
 Conda / Mamba	23.0+	conda.io/miniconda.html
 
 R	≥ 4.4	cran.r-project.org
-2️⃣ Clone and rebuild environment
-git clone https://github.com/<your-username>/metabo-immune-niches.git
+2️⃣ Clone and Rebuild Environment
+git clone https://github.com/it1mutiti/metabo-immune-niches.git
 cd metabo-immune-niches
 bash environment/rebuild_environment.sh
 
@@ -48,7 +65,7 @@ Restore the R packages from environment/renv.lock
 
 Validate that Seurat, GSVA, HDF5Array, and magick all load successfully
 
-3️⃣ Verify setup
+3️⃣ Verify Setup
 
 Check everything’s working:
 
@@ -96,7 +113,12 @@ metabo-immune-niches/
 
 If you use this workflow, please cite:
 
-Your Name et al. (2025). Metabo-immune-niches: a reproducible framework for multi-omic spatial immunometabolism.
+Mutiti, Irvine Tatenda (2025).
+metabo-immune-niches: Verified Reproducibility Release v1.0.0.
+Zenodo. https://doi.org/10.5281/zenodo.17447568
+
+See CITATION.cff
+ for machine-readable citation metadata.
 
 🧰 License
 
@@ -105,6 +127,14 @@ Licensed under the MIT License — see LICENSE
 
 🧪 Maintainer
 
-Your Name
 Irvine Tatenda Mutiti
+Independent Researcher
 📧 it1mutiti@gmail.com
+
+🧾 Provenance
+
+This repository archives the complete reproducible environment, data provenance, and validation workflow for the metabo-immune-niches study.
+It includes verified environment hashes, Makefile automation, and cross-language audit trails for computational reproducibility.
+
+
+---
